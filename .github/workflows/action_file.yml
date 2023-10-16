@@ -1,0 +1,14 @@
+name: MY FIRST GITHUB ACTION
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Echo Github Actions
+      run echo "Hello World to GITHUB ACTIONS"
