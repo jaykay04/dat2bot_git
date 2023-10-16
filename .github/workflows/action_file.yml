@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Echo Github Actions
-      run echo "Hello World to GITHUB ACTIONS"
+        run: echo "Hello World to GITHUB ACTIONS"
