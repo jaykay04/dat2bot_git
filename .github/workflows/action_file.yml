@@ -5,13 +5,19 @@ on:
     branches:
       - master
 
+env:
+  NAME: "JOSHUA GBEGUDU K"
+  ROLE: "SENIOR BIG DATA ENGINEER"
+  PASSION: "TECH, FOOTBALL & MUSIC"
+
+
 jobs:
   builds:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Echo Github Actions
-        run: ls -al
+        run: echo "My name is $NAME and i am a $ROLE. I am very passionate about $PASSION"
   
   post-build: 
     runs-on: ubuntu-latest
